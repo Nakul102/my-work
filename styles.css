@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Verdana', sans-serif; /* Changed font for a modern feel */
+    line-height: 1.7;
+    background-color: #e9ecef; /* Light gray background for subtle contrast */
+    color: #343a40; /* Dark gray text */
+}
+
+header {
+    background: linear-gradient(135deg, #5f2c91, #8e44ad); /* Vibrant gradient */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 3em; /* Larger header */
+    margin-bottom: 10px;
+    letter-spacing: 2px; /* Increased letter spacing */
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+section {
+    background: #ffffff;
+    margin: 20px auto; /* Centered section */
+    padding: 25px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+h2 {
+    color: #5f2c91; /* Primary color for headings */
+    margin-bottom: 15px;
+    font-size: 2em; /* Increased heading size */
+    border-bottom: 3px solid #8e44ad; /* Underline effect */
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #8e44ad; /* Subtle color for subheadings */
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 8px 0;
+    padding: 12px;
+    background: #f8f9fa; /* Light background for list items */
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s; /* Transition effects */
+}
+
+ul li:hover {
+    background: #e2e6ea; /* Darker background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #ced4da; /* Thicker border for inputs */
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #5f2c91; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(95, 44, 145, 0.5); /* Subtle shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #5f2c91; /* Primary button color */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background: #8e44ad; /* Change color on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #5f2c91; /* Matching footer color */
+    color: #ffffff;
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5em; /* Responsive heading size */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Responsive subheading size */
+    }
+}
